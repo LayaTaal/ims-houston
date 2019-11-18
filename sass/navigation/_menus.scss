@@ -4,9 +4,12 @@
 	float: left;
 	width: 100%;
 
-	/* Load the theme we want */
-	&.basic-menu {
+	/* Load the different header themes */
+	&.basic-theme {
 		@import 'menus/basic';
+	}
+	&.detailed-theme {
+		@import 'menus/detailed';
 	}
 }
 
