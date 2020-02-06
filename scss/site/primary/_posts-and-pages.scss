@@ -1,0 +1,44 @@
+.sticky {
+	display: block;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/* general page styles */
+
+.page {
+	.column-left {
+		padding-right: $spacing__large;
+	}
+	
+	.column-right {
+		border-top: 3px solid $grey__700;
+		padding-top: $spacing__large;
+		margin-left: 0;
+	}
+}
+
+@media screen and (min-width: #{$breakpoint__medium}) {
+	.page {
+		
+		.column-right {
+			border-top: none;
+			border-left: 1px solid $grey__700;
+			padding-top: 0;
+			padding-left: $spacing__large;
+		}
+	}
+}

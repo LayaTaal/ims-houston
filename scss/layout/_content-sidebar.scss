@@ -1,0 +1,62 @@
+.site-content {
+	margin: 60px auto 0;
+	max-width: $size__site-main;
+	padding: $spacing__xlarge $spacing__large 0;
+}
+
+.content-area {
+	max-width: $size__site-main;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.home {
+	.content-area {
+		padding: $spacing__xlarge 0;
+	}
+}
+
+.site-main {
+	flex: 0 1 auto;
+}
+
+.site-content .widget-area {
+	flex: 1 0 332px;
+	border-top: 3px solid $grey__700;
+	padding-top: $spacing__medium;
+}
+
+@media screen and (min-width: #{$breakpoint__medium}) {
+	.site-content {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: #{$breakpoint__large}) {
+	.site-content {
+		padding: $spacing__xlarge $spacing__large;
+	}
+	
+	.content-area {
+		flex-flow: row nowrap;
+		justify-content: center;
+	}
+
+	.site-main {
+		padding-right: $spacing__large;
+	}
+
+	.site-content .widget-area {
+		padding-left: $spacing__large;
+		border-left: 1px solid $grey__700;
+		border-top: none;
+		padding-top: 0;
+	}
+}
+
+.site-footer {
+	clear: both;
+	max-width: $size__site-main;
+}
+
+@import "no-sidebar";

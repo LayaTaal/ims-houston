@@ -11,23 +11,27 @@
 
 ?>
 
-	</div><!-- #content -->
+		</div><!-- /.site-content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'zinnfinity' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'zinnfinity' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'zinnfinity' ), 'zinnfinity', '<a href="https://zinnfinity.com">Jason Zinn</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+		<!-- footer -->
+		<footer class="footer" role="contentinfo">
+			<div class="footer-1 footer-column">
+				<?php if( is_active_sidebar('footer-widget-1') ) :
+					dynamic_sidebar('footer-widget-1');
+				endif; ?>
+			</div>
+			<div class="footer-2 footer-column">
+				<?php if( is_active_sidebar('footer-widget-2') ) :
+					dynamic_sidebar('footer-widget-2');
+				endif; ?>
+			</div>
+			<div class="footer-end">
+				<p class="footer-copyright">Copyright <?php echo date("Y"); ?>. Indian Music Society of Houston. All rights reserved.</p>
+			</div>
+		</footer>
+		<!-- /footer -->
+
+	</div><!-- .page-wrapper -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

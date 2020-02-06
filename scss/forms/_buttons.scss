@@ -1,0 +1,102 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 0;
+	border-radius: 3px;
+	@include font-size(0.9);
+	line-height: 1;
+	font-family: $font-sans-serif;
+	text-transform: uppercase;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+}
+
+.btn, .button,
+a.btn, a.button,
+a.btn:visited, a.button:visited,
+#stripe-submit {
+	border-radius: $border_radius__small;
+	display: inline-block;
+	text-transform: uppercase;
+	box-shadow: $box_shadow__small;
+	transition: all 0.2s ease-in-out;
+	font-size: $font-size__200;
+	font-family: $font-sans-serif;
+	background: $action__400;
+	padding: $spacing__small $spacing__small*3;
+	color: $grey__900;
+
+	&:hover {
+		color: $grey__900;
+		background: $action__500;
+	}
+}
+
+.btn--tickets,
+.btn--tickets:visited {
+	background: $action__400;
+	padding: $spacing__small $spacing__small*3;
+	color: $grey__900;
+	font-family: $font-sans-serif;
+
+	&:hover {
+		color: $grey__900;
+		background: $action__500;
+	}
+}
+
+.btn--featured,
+.btn--featured:visited,
+a.btn--featured,
+a.btn--featured:visited {
+	background: $secondary__500;
+	color: $grey__100;
+	padding: $spacing $spacing*3;
+	font-size: $font-size__400;
+	margin-top: $spacing__large;
+	
+	&:hover {
+		background: $secondary__600;
+		color: $grey__100;
+	}
+}
+
+/* Styling events calendar buttons */
+.entry .entry-content .tribe-common .tribe-tickets__buy.tribe-common-c-btn:disabled, 
+.tribe-common .tribe-tickets__buy.tribe-common-c-btn:disabled {
+	background-color: $action__400;
+	color: $grey__900;
+}
+
+.tribe-common .tribe-common-c-btn, 
+.tribe-common a.tribe-common-c-btn {
+	padding: $spacing__small $spacing__small*3;	background-color: $action__400;
+	color: $grey__900;
+	transition: 0.2s all ease-in-out;
+	box-shadow: $box_shadow__small;
+
+	&:hover {
+		background-color: $action__500;
+	}
+}
+
+.entry .entry-content .tribe-common .tribe-tickets__buy.tribe-common-c-btn, 
+.tribe-common .tribe-tickets__buy.tribe-common-c-btn {
+	background-color: $action__400;
+	color: $grey__900;
+	width: auto;
+	transition: 0.2s all ease-in-out;
+	box-shadow: $box_shadow__small;
+
+	&:hover {
+		background-color: $action__500;
+	}
+}

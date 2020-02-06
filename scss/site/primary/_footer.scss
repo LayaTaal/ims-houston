@@ -1,0 +1,126 @@
+/* footer */
+.footer {
+	background: $primary__100;
+	padding: $spacing__xlarge $spacing__large 0;
+	color: $grey__900;
+}
+.footer-1 {
+  text-align: center;
+
+  img {
+    max-width: 128px;
+  }
+
+  p {
+    color: $grey__900;
+  }
+
+  ul {
+    padding-left: 0;
+    margin-left: $spacing__large;
+
+    li {
+      color: $primary__600;
+    }
+  }
+  
+  .widget_text {
+    border-bottom: 1px solid $primary__300;
+  }
+
+	.btn--featured {
+		margin-top: $spacing__large;
+	}
+}
+.footer-1__right {
+  padding: 0 0 2rem;
+  text-align: center;
+}
+.footer-heading {
+	font-family: $font__headings;
+	font-size: $font-size__500;
+  line-height: 1.5;
+  color: $grey__900;
+}
+.footer-2 {
+
+	.textwidget {
+		display: flex;
+		flex-flow: row wrap;
+    margin-top: $spacing__large;
+    justify-content: space-between;
+	}
+
+	ul {
+		list-style: none;
+    flex: 0 0 130px;
+    margin: $spacing__medium;
+    padding-left: 0;
+
+		li:first-child {
+      color: $primary__500;
+			margin-bottom: $spacing;
+      letter-spacing: $letter-spacing__heading;
+      font-weight: 700;
+      text-transform: uppercase;
+		}
+
+		li {
+      margin: $spacing__small 0;
+      font-family: $font-sans-serif;
+      font-size: $font-size__300;
+      letter-spacing: 1px;
+
+			a {
+				color: $grey__800;
+				font-weight: 400;
+				transition: 0.35s color ease-out;
+
+				&:hover {
+					color: $primary__400;
+				}
+			}
+		}
+	}
+}
+.footer-end {
+	text-align: center;
+}
+.footer-logo {
+	width: 70px;
+}
+.footer-copyright {
+	font-size: 1rem;
+	color: $grey__800;
+}
+
+@media screen and (min-width: #{$breakpoint__medium}) {
+	.footer-column,
+	.footer-end {
+		max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .footer-1 {
+    text-align: left;
+  }
+	.footer-1 .textwidget {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+	}
+	.footer-1__left {
+		width: 50%;
+	}
+	.footer-1__right {
+		width: 50%;
+  }
+  .footer-heading {
+    font-size: $font-size__700;
+		line-height: 1.25;
+  }
+	.footer-copyright {
+		display: inline-block;
+		margin-left: $spacing__large;
+	}
+}

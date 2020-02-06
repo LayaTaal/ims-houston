@@ -1,0 +1,51 @@
+/* Primaries */
+$primary__100: hsl(36,100,11);
+$primary__200: hsl(36,100,22);
+$primary__300: hsl(36,100,27);
+$primary__400: hsl(36,100,38);
+$primary__500: hsl(36,100,50);
+$primary__600: hsl(36,100,60);
+$primary__700: hsl(36,100,72);
+$primary__800: hsl(36,100,80);
+$primary__900: hsl(36,100,90);
+
+/* Secondary */
+$secondary__500: hsla(52,82,58);
+$secondary__600: hsla(54,85,62);
+
+/* Actions */
+$action__400: hsl(120, 90, 20);
+$action__500: hsl(120, 100, 25);
+$action__600: hsl(117,95,31);
+
+/* Greys */
+$grey__100: hsl(36, 10, 9);
+$grey__200: hsl(36, 8, 17);
+$grey__300: hsl(36, 6, 30);
+$grey__400: hsl(36, 4, 42);
+$grey__500: hsl(36, 2, 54);
+$grey__600: hsl(36, 4, 66);
+$grey__700: hsl(36, 6, 79);
+$grey__800: hsl(36, 8, 95);
+$grey__900: hsl(36, 10, 100);
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: $grey__600;
+$color__background-button: $action__500;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: $grey__300;
+$color__text-input-focus: $grey__100;
+$color__link: $primary__400;
+$color__link-visited:$primary__400;
+$color__link-hover:$primary__300;
+$color__text-main: $grey__300;
+
+$color__border-button: $action__400;
+$color__border-button-hover: $action__600;
+$color__border-button-focus: $action__600;
+$color__border-input: $grey__500;
+$color__border-abbr: $grey__500;

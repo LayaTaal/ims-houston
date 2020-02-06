@@ -1,0 +1,38 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	margin-top: 0;
+}
+
+h1 {
+	font-size: $font-size__800;
+	line-height: 1.15;
+	font-weight: 400;
+
+	&:not(.frontpage-title) {
+		color: $primary__400;
+	}
+
+	&.frontpage-title {
+		font-size: $font-size__700;
+	}
+}
+
+h2, h3, h4 {
+	font-weight: 400;
+	margin-bottom: $spacing__small;
+}
+
+h2 {
+	font-size: $font-size__700;
+	line-height: 1.15;
+}
+
+h3 {
+	font-size: $font-size__600;
+	line-height: 1.25;
+}
+
+h4 {
+	font-size: $font-size__500;
+	line-height: 1.35;
+}

@@ -113,6 +113,28 @@ function zinnfinity_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	// Define Sidebar Widget Area 1
+	register_sidebar(array(
+		'name' => __('Footer Area 1', 'zinnfinity'),
+		'description' => __('Additional information to be provided in footer', 'zinnfinity'),
+		'id' => 'footer-widget-1',
+		'before_widget' => '<div id="%1$s" class="%2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+));
+
+// Define Sidebar Widget Area 2
+register_sidebar(array(
+		'name' => __('Footer Area 2', 'zinnfinity'),
+		'description' => __('Additional information to be provided in footer', 'zinnfinity'),
+		'id' => 'footer-widget-2',
+		'before_widget' => '<div id="%1$s" class="%2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+));
 }
 add_action( 'widgets_init', 'zinnfinity_widgets_init' );
 
@@ -128,6 +150,10 @@ function zinnfinity_scripts() {
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
+	}
+
+	if ( is_front_page() ) {
+		wp_enqueue_script( 'zinnfinity-slider', get_template_directory_uri() . '/js/slider.js', array(), '1.0.0', true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'zinnfinity_scripts' );
@@ -164,4 +190,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
+}
+
+/**
+ * Woocommerce edits
+ */
+add_filter( 'woocommerce_checkout_fields' , 'custom_checkout_fields' );
+function custom_checkout_fields( $fields ) {
+	unset($fields['billing']['billing_company']);
+	unset($fields['billing']['billing_country']);
+	return $fields;
 }
