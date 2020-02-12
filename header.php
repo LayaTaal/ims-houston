@@ -30,7 +30,7 @@
 		<header id="masthead" class="site-header site-header--large">
 			<div class="nav-container">
 				<div class="site-branding">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri() ?>/img/ims-houston-logo.svg" alt="Indian Music Society of Houston"></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri() ?>/dist/images/ims-houston-logo.svg" alt="Indian Music Society of Houston"></a>
 					</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation">

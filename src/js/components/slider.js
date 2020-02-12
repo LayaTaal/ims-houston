@@ -1,4 +1,5 @@
 let slideInterval;
+const toggleConrols = document.querySelectorAll('.zinnfinity-toggle-control');
 
 function getSlides() {
   // Get slider container
@@ -66,19 +67,22 @@ function nextSlide() {
   }
 }
 
-function gotoSlide(slideIndex) {
-  clearInterval(slideInterval);
+console.log(toggleConrols);
+toggleConrols.forEach((control, slideIndex) => {
+  control.addEventListener('click', () => {
+    clearInterval(slideInterval);
 
-  // Contains an object containing an array of slide DOM elements and the active slide index
-  const slider = getSlides();
-  const { slides, activeSlide, toggleControls } = slider;
+    // Contains an object containing an array of slide DOM elements and the active slide index
+    const slider = getSlides();
+    const { slides, activeSlide, toggleControls } = slider;
 
-  slides[activeSlide].classList.remove('active');
-  slides[slideIndex].classList.add('active');
+    slides[activeSlide].classList.remove('active');
+    slides[slideIndex].classList.add('active');
 
-  toggleControls[activeSlide].classList.remove('active');
-  toggleControls[slideIndex].classList.add('active');
-}
+    toggleControls[activeSlide].classList.remove('active');
+    toggleControls[slideIndex].classList.add('active');
+  });
+});
 
 function playSlides() {
   slideInterval = setInterval(nextSlide, 3000);

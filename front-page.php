@@ -32,7 +32,7 @@ $events = tribe_get_events( [
     <div class="zinnfinity-slider__toggle-slides">
       <?php
       for ( $i = 0; $i < count($featured_events); $i++ ) {
-        echo '<span class="toggle-' . $i . '" onclick="gotoSlide(' . $i . ')"></span>';
+        echo '<span class="zinnfinity-toggle-control toggle-' . $i . '"></span>';
       }
       ?>
       <!-- If we want previous / next slide controls
