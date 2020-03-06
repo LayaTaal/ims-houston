@@ -69,6 +69,18 @@ a.btn--featured:visited {
 	}
 }
 
+a.btn--green {
+	background: $action__400;
+	color: $grey__900;
+	margin-top: 0;
+	margin-bottom: $spacing__large;
+
+	&:hover {
+		background: $action__500;
+		color: $grey__900;
+	}
+}
+
 /* Styling events calendar buttons */
 .entry .entry-content .tribe-common .tribe-tickets__buy.tribe-common-c-btn:disabled, 
 .tribe-common .tribe-tickets__buy.tribe-common-c-btn:disabled {
