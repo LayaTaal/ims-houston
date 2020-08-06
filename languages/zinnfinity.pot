@@ -36,3 +36,7 @@ msgstr ""
 #: functions.php:130
 msgid "Footer Area 2"
 msgstr ""
+
+#: template-apply.php:3
+msgid "Membership"
+msgstr ""
