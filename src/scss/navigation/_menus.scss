@@ -1,26 +1,22 @@
 .site-header {
-	background: $grey__800;
+	background: $grey__900;
 	box-shadow: $box_shadow__small;
-	height: 60px;
 	width: 100%;
+	padding: $spacing;
 }
 
 .nav-container {
 	position: relative;
 	width: 100%;
   display: flex;
-  flex-flow: column wrap;
+	flex-flow: row wrap;
+	justify-content: space-between;
   align-items: center;
 	transition: left 0.35s ease;
 }
 
 .site-branding {
-	position: absolute;
 	text-align: left;
-	top: 14px;
-	left: 2rem;
-	width: 100%;
-	z-index: 999;
 
 	img {
 		width: 150px;
@@ -130,9 +126,9 @@
 }
 
 .menu-toggle {
-	position: fixed;
+	position: absolute;
 	top: 18px;
-	right: 2rem;
+	right: 1rem;
 	background: none;
 	border: 0;
 	outline: none;
