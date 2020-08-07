@@ -67,7 +67,6 @@ function nextSlide() {
   }
 }
 
-console.log(toggleConrols);
 toggleConrols.forEach((control, slideIndex) => {
   control.addEventListener('click', () => {
     clearInterval(slideInterval);
@@ -85,7 +84,7 @@ toggleConrols.forEach((control, slideIndex) => {
 });
 
 function playSlides() {
-  slideInterval = setInterval(nextSlide, 3000);
+  slideInterval = setInterval(nextSlide, 5000);
 }
 
 window.onload = function() {

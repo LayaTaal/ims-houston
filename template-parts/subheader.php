@@ -41,7 +41,7 @@ $events = tribe_get_events( [
       <?php get_template_part( 'template-parts/event', 'featured' ); ?>
       <div class="zinnfinity-slider__toggle-slides">
         <?php
-        for ( $i = 0; $i < count($featured_events); $i++ ) {
+        for ( $i = 0; $i < count($featured_events) + 1; $i++ ) {
           echo '<span class="zinnfinity-toggle-control toggle-' . $i . '"></span>';
         }
         ?>

@@ -124,10 +124,13 @@
   background: $black;
   opacity: 0;
   z-index: 98;
+  transform: translateX(150px);
   
   &.active {
     opacity: 1;
     z-index: 99;
+    transform: translateX(0);
+    transition: opacity 2s ease-in-out 0s, transform 1s ease-in-out 0s;
   }
 
   @media screen and (min-width: #{$breakpoint__medium}) {
