@@ -24,7 +24,7 @@ const PRODUCTION = yargs.argv.prod;
 const server = browserSync.create();
 export const serve = done => {
   server.init({
-    proxy: 'http://localhost:8086/', // put your local website link here
+    proxy: 'https://ims-houston.local', // put your local website link here
   });
   done();
 };
