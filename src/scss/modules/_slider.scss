@@ -64,31 +64,44 @@
   
   @media screen and (min-width: #{$breakpoint__medium}) {
     .featured-event {
-      height: 400px;
+      height: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: stretch;
     }
     
     .featured-event__image {
-      position: absolute;
-      right: 0;
-      width: 56%;
-      height: 100%;
+      flex: 0 0 50%;
+      order: 1;
+    }
+
+    .featured-event__title {
+      font-size: 48px;
     }
     
     .featured-event__content {
-      position: absolute;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: none;
-      background-image: linear-gradient(106deg, #{$primary__100} 50%, transparent 50%);
-  
-      > * {
-        width: 450px;
-        max-width: 50%;
+      position: relative;
+      flex: 0 0 50%;
+      order: 0;
+      padding: 0;
+      padding-right: 2rem;
+
+      .event-excerpt {
+        font-size: $font-size__500;
+        line-height: 1.5;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .event-accompanists {
+        display: block;
       }
   
       .btn--featured {
-        width: 200px;
+        min-width: 200px;
+        font-size: $font-size__500;
       }
     }
   }
