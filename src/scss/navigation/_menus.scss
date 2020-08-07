@@ -55,7 +55,7 @@
 
 			a {
 				width: 200px;
-				font-size: $font-size__200;
+				font-size: $font-size__300;
 			}
 
 			:hover > a,
@@ -83,6 +83,8 @@
 		text-transform: uppercase;
 		font-family: $font-sans-serif;
 		font-size: $font-size__400;
+		font-weight: 800;
+		color: $grey__100;
 		letter-spacing: 1px;
 	}
 
@@ -163,15 +165,12 @@
 	}
 
 	.nav-container {
-		position: relative;
-		left: 0;
-		top: 0;
 		width: 100%;
 		max-width: 1200px;
 		margin: 0 auto;
 		flex-flow: row nowrap;
-		align-items: flex-start;
-		padding: 2rem;
+		align-items: center;
+		padding: 1rem;
 	}
 
 	.site-branding {
@@ -218,7 +217,7 @@
 		background: $grey__900;
 		border-radius: $border_radius__small;
 		box-shadow: $box_shadow__medium;
-		padding: $spacing__small 0;
+		padding: $spacing;
 
 		li {
 			padding: 0 $spacing;
