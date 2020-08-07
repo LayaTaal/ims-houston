@@ -1,4 +1,8 @@
 .subheader {
   position: relative;
   height: 500px;
+
+  @media screen and (min-width: #{$breakpoint__medium}) {
+    height: 580px;
+  }
 }

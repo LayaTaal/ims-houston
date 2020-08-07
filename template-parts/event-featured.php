@@ -12,7 +12,7 @@ global $featured_events;
 // Loop through the events: set up each one as
 // the current post then use template tags to
 // display the title and content
-$slide_index = 0;
+$slide_index = 1;
 
 foreach ( $featured_events as $post ) {
   setup_postdata( $post );
@@ -40,6 +40,6 @@ foreach ( $featured_events as $post ) {
     echo '</div>';
   echo '</div>';
 
-  $i++;
+  $slide_index++;
 }
 ?>
