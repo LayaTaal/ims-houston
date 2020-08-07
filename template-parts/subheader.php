@@ -22,17 +22,19 @@ $events = tribe_get_events( [
 
 ?>
 
-<div id="featured-event-slides" class="zinnfinity-slider">
-  <?php get_template_part( 'template-parts/event', 'featured' ); ?>
-  <div class="zinnfinity-slider__toggle-slides">
-    <?php
-    for ( $i = 0; $i < count($featured_events); $i++ ) {
-      echo '<span class="zinnfinity-toggle-control toggle-' . $i . '"></span>';
-    }
-    ?>
-    <!-- If we want previous / next slide controls
-    <a class="left" onclick="previousSlide()">❮</a>  
-    <a class="right" onclick="nextSlide()">❯</a> 
-    -->
+<section class="subheader">
+  <div id="featured-event-slides" class="zinnfinity-slider">
+    <?php get_template_part( 'template-parts/event', 'featured' ); ?>
+    <div class="zinnfinity-slider__toggle-slides">
+      <?php
+      for ( $i = 0; $i < count($featured_events); $i++ ) {
+        echo '<span class="zinnfinity-toggle-control toggle-' . $i . '"></span>';
+      }
+      ?>
+      <!-- If we want previous / next slide controls
+      <a class="left" onclick="previousSlide()">❮</a>  
+      <a class="right" onclick="nextSlide()">❯</a> 
+      -->
+    </div>
   </div>
-</div>
+</section>

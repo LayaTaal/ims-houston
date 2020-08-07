@@ -1,13 +1,10 @@
 .site-header {
-	position: fixed;
-	left: 0;
-	top: 0;
 	background: $grey__800;
 	box-shadow: $box_shadow__small;
 	height: 60px;
 	width: 100%;
-	z-index: 998;
 }
+
 .nav-container {
 	position: relative;
 	width: 100%;

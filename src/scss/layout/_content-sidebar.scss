@@ -1,19 +1,13 @@
 .site-content {
-	margin: 60px auto 0;
+	margin: 0 auto;
 	max-width: $size__site-main;
-	padding: $spacing__xlarge $spacing__large 0;
+	padding: $spacing__large;
 }
 
 .content-area {
 	max-width: $size__site-main;
 	display: flex;
 	flex-flow: row wrap;
-}
-
-.home {
-	.content-area {
-		padding: $spacing__xlarge 0;
-	}
 }
 
 .site-main {
