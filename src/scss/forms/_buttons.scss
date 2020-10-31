@@ -62,7 +62,7 @@ a.btn--featured:visited {
 	padding: $spacing $spacing*3;
 	font-size: $font-size__400;
 	margin-top: $spacing__large;
-	
+
 	&:hover {
 		background: $secondary__600;
 		color: $grey__100;
@@ -82,13 +82,13 @@ a.btn--green {
 }
 
 /* Styling events calendar buttons */
-.entry .entry-content .tribe-common .tribe-tickets__buy.tribe-common-c-btn:disabled, 
+.entry .entry-content .tribe-common .tribe-tickets__buy.tribe-common-c-btn:disabled,
 .tribe-common .tribe-tickets__buy.tribe-common-c-btn:disabled {
 	background-color: $action__400;
 	color: $grey__900;
 }
 
-.tribe-common .tribe-common-c-btn, 
+.tribe-common .tribe-common-c-btn,
 .tribe-common a.tribe-common-c-btn {
 	padding: $spacing__small $spacing__small*3;	background-color: $action__400;
 	color: $grey__900;
@@ -100,7 +100,7 @@ a.btn--green {
 	}
 }
 
-.entry .entry-content .tribe-common .tribe-tickets__buy.tribe-common-c-btn, 
+.entry .entry-content .tribe-common .tribe-tickets__buy.tribe-common-c-btn,
 .tribe-common .tribe-tickets__buy.tribe-common-c-btn {
 	background-color: $action__400;
 	color: $grey__900;
@@ -110,5 +110,18 @@ a.btn--green {
 
 	&:hover {
 		background-color: $action__500;
+	}
+}
+
+/* Donation Widget */
+.widget_wc-donation-widget {
+	select#wc-donation-widget-f-donation-value {
+		padding: 0 10px;
+		color: $grey__100;
+	}
+
+	.button {
+		padding: $spacing $spacing*3;
+		font-size: $font-size__400;
 	}
 }
