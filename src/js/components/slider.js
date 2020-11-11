@@ -89,6 +89,11 @@ function playSlides() {
 
 window.onload = function() {
   const slider = document.querySelector('.zinnfinity-slider');
+
+  if ( ! slider ) {
+    return;
+  }
+
   const slides = slider.querySelectorAll('.zinnfinity-slider__slide');
   const toggleControls = slider.querySelector(
     '.zinnfinity-slider__toggle-slides'
