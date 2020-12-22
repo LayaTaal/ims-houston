@@ -12,11 +12,14 @@
     background-color: transparent;
     margin-bottom: 1rem;
 	}
-	
+
 	label {
 		display: block;
 	}
 
+  .woocommerce-notices-wrapper {
+    display: none !important;
+  }
 
   .col2-set {
     display: flex;
@@ -24,22 +27,22 @@
     max-width: 900px;
     margin: 0 auto;
   }
-  
+
   .col-1 {
     flex: 1 1 500px;
     padding-right: 2rem;
   }
-  
+
   .col2-set label {
     display: block;
   }
-  
+
   .col-2 {
     flex: 0 0 350px;
     padding-left: 2rem;
     border-left: 1px solid $grey__700;
   }
-    
+
   .tribe-checkout-backlinks {
     margin: 1rem 0;
   }
