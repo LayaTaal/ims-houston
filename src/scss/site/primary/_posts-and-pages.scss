@@ -23,7 +23,7 @@
 	.column-left {
 		padding-right: $spacing__large;
 	}
-	
+
 	.column-right {
 		border-top: 3px solid $grey__700;
 		padding-top: $spacing__large;
@@ -33,12 +33,47 @@
 
 @media screen and (min-width: #{$breakpoint__medium}) {
 	.page {
-		
+
 		.column-right {
 			border-top: none;
 			border-left: 1px solid $grey__700;
 			padding-top: 0;
 			padding-left: $spacing__large;
+		}
+	}
+}
+
+/*-----------------------*/
+/* Membership Page */
+/*-----------------------*/
+.page-template-template-apply {
+	.site-content {
+		@media screen and (min-width: #{$breakpoint__medium}) {
+			display: flex;
+			flex-flow: row nowrap;
+		}
+	}
+
+	#primary {
+		@media screen and (min-width: #{$breakpoint__medium}) {
+			flex: 0 0 66.66%;
+			padding-right: 2rem;
+		}
+	}
+	#secondary {
+		border-top: 3px solid #cdcac6;
+		padding-top: 2rem;
+		margin-top: 2rem;
+
+		.btn--featured {
+			margin-top: 1rem;
+		}
+
+		@media screen and (min-width: #{$breakpoint__medium}) {
+			flex: 0 0 33.33%;
+			padding-left: 2rem;
+			border-top: 0;
+			border-left: 1px solid #cdcac6;
 		}
 	}
 }
