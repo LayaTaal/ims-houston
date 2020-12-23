@@ -8,8 +8,8 @@
  */
 
 // Retrieve the next 3 upcoming events
-$events = tribe_get_events( [ 
-  'posts_per_page' => -1, 
+$events = tribe_get_events( [
+  'posts_per_page' => 3,
   'start_date'     => 'now',
 ] );
 
@@ -37,11 +37,11 @@ foreach ( $events as $post ) {
             echo '<span class="event-header__date">' . tribe_get_start_date( $post ) . '</span>';
           echo '</div>';
           echo '<a href="' . esc_url( get_permalink( $post->ID ) ) . '" class="btn btn--tickets">' . $ticket_type . '</a>';
-        echo '</div>'; 
+        echo '</div>';
         echo '<div class="event-excerpt">';
           echo $post->post_excerpt;
         echo '</div>';
-        
+
         // Display accompanists if we have any
         if ( get_field( 'accompanists' ) ):
           echo '<p class="event-accompanists">' . get_field( 'accompanists' ) . '</p>';
