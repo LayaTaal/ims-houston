@@ -25,9 +25,9 @@ $events = tribe_get_events( [
                     <h2>Upcoming Events</h2>
 					<?php get_template_part( 'template-parts/event', 'list' ); ?>
                 </div>
-                <?php wp_reset_postdata(); ?>
 			<?php endif; ?>
-				<?php the_content(); ?>
+            <?php wp_reset_postdata(); ?>
+			<?php the_content(); ?>
         </main><!-- #main -->
 		<?php get_sidebar() ?>
     </div><!-- #primary -->
