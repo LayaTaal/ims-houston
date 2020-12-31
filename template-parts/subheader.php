@@ -64,7 +64,7 @@ $slide_count = ( $hero_title || $hero_subtitle || $hero_description || $hero_ima
 
             <div class="zinnfinity-slider__toggle-slides">
 				<?php
-				for ( $i = $slide_count; $i < count( $featured_events ) + $slide_count; $i ++ ) {
+				for ( $i = 0; $i < count( $featured_events ) + $slide_count; $i ++ ) {
 					echo '<span class="zinnfinity-toggle-control toggle-' . $i . '"></span>';
 				}
 				?>
