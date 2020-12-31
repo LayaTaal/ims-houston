@@ -12,7 +12,8 @@ get_header();
 // Check if we have any upcoming events.
 $events = tribe_get_events( [
 	'posts_per_page' => 3,
-	'start_date'     => 'now',
+    'start_date'     => 'now',
+    'featured'       => false,
 ] );
 
 ?>
