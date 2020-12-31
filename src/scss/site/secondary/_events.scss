@@ -4,15 +4,15 @@
 }
 
 /* Frontpage events */
+.frontpage-events {
+  margin-bottom: 2rem;
+}
+
 .frontpage-event {
 	display: flex;
   flex-flow: row wrap;
   padding: $spacing__large 0;
   border-bottom: 1px solid $grey__700;
-
-  &:last-of-type {
-    border-bottom: 0;
-  }
 
   .event-header {
     display: flex;
