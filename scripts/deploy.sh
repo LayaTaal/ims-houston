@@ -28,14 +28,14 @@ git clone $REPO_URL .
 # Setup deploy vars based on env
 ssh_url=""
 if [[ $deploy_env == "staging" ]]; then
-  ssh_url="${STAGING_ENV}:sites/imshstaging/wp-content/zinnfinity"
+  ssh_url="${STAGING_ENV}:sites/imshstaging/wp-content/themes/zinnfinity"
 
   echo "Starting up build to staging server at $ssh_url"
   echo "Switching to branch staging"
   git fetch origin staging
   git checkout staging
 elif [[ $deploy_env == "prod" ]]; then
-  ssh_url="${PROD_ENV}:sites/imsproduction/wp-content/zinnfinity"
+  ssh_url="${PROD_ENV}:sites/imsproduction/wp-content/themes/zinnfinity"
 
   echo "Starting up build to production server at $ssh_url"
   echo "Switching to branch master"
