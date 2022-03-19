@@ -40,23 +40,25 @@ $slide_count = ( $hero_title || $hero_subtitle || $hero_description || $hero_ima
                         <div class="featured-event__image"
                              style="background-image: url(<?php echo esc_url( $hero_image_url ); ?>)"></div>
 					<?php endif; ?>
-                    <div class="featured-event__content">
-						<?php if ( $hero_title || $hero_subtitle ) : ?>
-                            <div class="featured-event-header">
-								<?php if ( $hero_title ) : ?>
-                                    <h3 class="featured-event__title"><?php echo esc_html( $hero_title ); ?></h3>
-								<?php endif; ?>
-								<?php if ( $hero_subtitle ) : ?>
-                                    <span class="featured-event__date"><?php echo esc_html( $hero_subtitle ); ?></span>
-								<?php endif; ?>
-                            </div>
-						<?php endif; ?>
-						<?php if ( $hero_description ) : ?>
-                            <div class="event-excerpt">
-								<?php echo esc_html( $hero_description ); ?>
-                            </div>
-						<?php endif; ?>
-                    </div>
+	                <?php if ( $hero_title || $hero_subtitle || $hero_description ) : ?>
+	                    <div class="featured-event__content">
+							<?php if ( $hero_title || $hero_subtitle ) : ?>
+	                            <div class="featured-event-header">
+									<?php if ( $hero_title ) : ?>
+	                                    <h3 class="featured-event__title"><?php echo esc_html( $hero_title ); ?></h3>
+									<?php endif; ?>
+									<?php if ( $hero_subtitle ) : ?>
+	                                    <span class="featured-event__date"><?php echo esc_html( $hero_subtitle ); ?></span>
+									<?php endif; ?>
+	                            </div>
+							<?php endif; ?>
+							<?php if ( $hero_description ) : ?>
+	                            <div class="event-excerpt">
+									<?php echo esc_html( $hero_description ); ?>
+	                            </div>
+							<?php endif; ?>
+	                    </div>
+	                <?php endif; ?>
                 </div>
 			<?php endif; ?>
 

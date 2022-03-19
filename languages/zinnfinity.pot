@@ -1,4 +1,4 @@
-# Copyright (C) 2020 zinnfinity
+# Copyright (C) 2021 zinnfinity
 # This file is distributed under the same license as the zinnfinity package.
 msgid ""
 msgstr ""
@@ -12,30 +12,6 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#: functions.php:47
-msgid "Primary"
-msgstr ""
-
-#: functions.php:108
-msgid "Sidebar"
-msgstr ""
-
-#: functions.php:110
-msgid "Add widgets here."
-msgstr ""
-
-#: functions.php:119
-msgid "Footer Area 1"
-msgstr ""
-
-#: functions.php:120, functions.php:131
-msgid "Additional information to be provided in footer"
-msgstr ""
-
-#: functions.php:130
-msgid "Footer Area 2"
-msgstr ""
 
 #: template-apply.php:3
 msgid "Membership"
